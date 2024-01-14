@@ -10,6 +10,7 @@ else()
 	set(TABLES_SOURCE "")
 endif()
 
+set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 
 #general settings
 file(GLOB IMGUI_SOURCES
